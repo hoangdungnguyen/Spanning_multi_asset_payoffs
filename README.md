@@ -1,8 +1,19 @@
 # Spanning_multi_asset_payoffs
 
-This github repository contains code and technical implementation specification of the paper "Spanning Multi-Asset Payoffs With ReLUs" by Sébastien Bossu, Stéphane Crépey, Nisrine Madhar and Hoang-Dung Nguyen.
+This github repository provides code and technical implementation specification of the paper "Spanning Multi-Asset Payoffs With ReLUs" by Sébastien Bossu, Stéphane Crépey, Nisrine Madhar and Hoang-Dung Nguyen.
 
-## Data Sampling
+## Overview
 
-We use synthetic data to generate our training and test sets, respectively denoted as $\mathcal{D}^{train}$ and $\mathcal{D}^{test}$ with sizes $n^{train}, n^{test}$. Each data point is a bundle of asset performances and corresponding payoff value $\left (\bf x, F(\bf x) \right) \in \mathbm{R}^{d+1}$. Table \ref{tab:training-specs} provides the regular grid sampling specifications used to generate the training and test sets in low dimension $d=2$ to 5.  This approach ensures there are no gaps in sampling and facilitates comparisons between option payoffs.  Note that some payoffs require a different $\vec x$-sampling range to curb the number of zero payoff values.  Estimates are evaluated on a test set of 50,000 to 200,000  points drawn uniformly in the same range as the training grid.
+`fig` and `result` folders contain some figures and results of our numerical experiments. `DC_theoretical_test.ipynb` notebook implements and compares the pratical solution of the spanning formulas for the dispersion call to the theoretical solution deduced in Section 4 of the paper. Other Python scripts are detailed as below
+
+- `data_generator.py` contains an object to generate spanning data with different sampling techniques;
+- `model.py` contains all spanning strategies;
+- `payoff_spec.py` stores the data sampling specification of each payoff;
+- `spanningengine.py` defines spanning engine;
+- `tool.py` contains some useful functions;
+- run `run_file.py` to implement the spanning for a selected payoff in dimension $d=2,3,4,5,20,50$;
+- run `run_file_nbbasket.py` to implement the spanning for a selected payoff in dimension $d=2,3,4,5$ while varying the number of spanning baskets.
+
+Finally, the `data_sampling.pdf` resumes the speficiation of the data generation in our experiments.
+
 
