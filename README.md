@@ -6,7 +6,7 @@ This github repository provides code and technical implementation specification 
 
 `fig` and `result` folders contain some figures and results of our numerical experiments. 
 
-`paper` folder contains complementary material of the paper.
+`paper` folder contains numerical implementation details of the paper.
 
 `DC_theoretical_test.ipynb` notebook implements and compares the pratical solution of the spanning problem for the dispersion call to the theoretical formulas deduced in Section 4 of the paper. Other Python scripts are detailed as below
 
