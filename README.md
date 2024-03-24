@@ -8,7 +8,7 @@ This github repository provides code and technical implementation specification 
 
 `paper` folder contains complementary material of the paper.
 
-`DC_theoretical_test.ipynb` notebook implements and compares the pratical solution of the spanning problem for the dispersion call to the theoretical formulas deduced in Section 4 of the paper. Other Python scripts are detailed as below
+`DC_theoretical_test.ipynb` notebook implements and compares the practical solution of the spanning problem for the dispersion call to the theoretical formulas deduced in Section 4 of the paper. Other Python scripts are detailed as below
 
 - `data_generator.py` contains an object to generate spanning data with different sampling techniques;
 - `model.py` contains all spanning strategies;
