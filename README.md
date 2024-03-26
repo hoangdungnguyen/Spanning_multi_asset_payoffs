@@ -1,6 +1,6 @@
 # Spanning_multi_asset_payoffs
 
-This github repository provides code and technical implementation specification of the paper "Spanning Multi-Asset Payoffs With ReLUs" by Sébastien Bossu, Stéphane Crépey, Nisrine Madhar and Hoang-Dung Nguyen.
+This github repository provides code and technical implementation specification of the paper "Spanning Multi-Asset Payoffs With ReLUs" by Sébastien Bossu, Stéphane Crépey and Hoang-Dung Nguyen (with the contributions of Nisrine Madhar to the numerical implementation).
 
 ## Overview
 
